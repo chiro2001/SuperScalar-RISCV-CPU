@@ -1,0 +1,12 @@
+./scr1/includes/scr1_hdu
+./scr1/includes/scr1_arch_description
+./scr1/includes/scr1_memif
+./scr1/includes/scr1_tdu
+./scr1/includes/scr1_riscv_isa_decoding
+./scr1/includes/scr1_search_ms1
+./scr1/includes/scr1_ipic
+./scr1/includes/scr1_arch_types
+./scr1/includes/scr1_dm
+./scr1/includes/scr1_tapc
+./scr1/includes/scr1_csr
+./scr1/includes/scr1_ahb

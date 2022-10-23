@@ -3,9 +3,9 @@
 /// @brief      Core tracelog module
 ///
 
-`include "scr1_arch_description.svh"
-`include "scr1_arch_types.svh"
-`include "scr1_csr.svh"
+`include "scr1_arch_description.h"
+`include "scr1_arch_types.h"
+`include "scr1_csr.h"
 
 module scr1_tracelog (
     input   logic                                   rst_n,

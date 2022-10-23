@@ -3,9 +3,9 @@
 /// @brief      SCR1 top testbench AXI
 ///
 
-`include "scr1_arch_description.svh"
+`include "scr1_arch_description.h"
 `ifdef SCR1_IPIC_EN
-`include "scr1_ipic.svh"
+`include "scr1_ipic.h"
 `endif // SCR1_IPIC_EN
 
 module scr1_top_tb_axi (

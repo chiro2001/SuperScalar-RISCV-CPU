@@ -3,12 +3,12 @@
 /// @brief      HART Debug Unit (HDU)
 ///
 
-`include "scr1_arch_description.svh"
+`include "scr1_arch_description.h"
 
 `ifdef SCR1_DBGC_EN
-`include "scr1_arch_types.svh"
-`include "scr1_riscv_isa_decoding.svh"
-`include "scr1_hdu.svh"
+`include "scr1_arch_types.h"
+`include "scr1_riscv_isa_decoding.h"
+`include "scr1_hdu.h"
 
 
 module scr1_pipe_hdu #( parameter HART_PBUF_INSTR_REGOUT_EN = 1'b1 ) (

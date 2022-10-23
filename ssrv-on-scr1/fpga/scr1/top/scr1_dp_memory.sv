@@ -3,7 +3,7 @@
 /// @brief      Dual-port synchronous memory with byte enable inputs
 ///
 
-`include "scr1_arch_description.svh"
+`include "scr1_arch_description.h"
 
 `ifdef SCR1_TCM_EN
 module scr1_dp_memory

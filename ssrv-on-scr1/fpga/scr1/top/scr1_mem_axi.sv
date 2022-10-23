@@ -3,8 +3,8 @@
 /// @brief      Memory AXI bridge
 ///
 
-`include "scr1_memif.svh"
-`include "scr1_arch_description.svh"
+`include "scr1_memif.h"
+`include "scr1_arch_description.h"
 
 module scr1_mem_axi
 #(

@@ -3,11 +3,11 @@
 /// @brief      TAP Controller (TAPC)
 ///
 
-`include "scr1_arch_description.svh"
+`include "scr1_arch_description.h"
 
 `ifdef SCR1_DBGC_EN
-`include "scr1_tapc.svh"
-`include "scr1_dm.svh"
+`include "scr1_tapc.h"
+`include "scr1_dm.h"
 
 module scr1_tapc (
     // JTAG signals

@@ -4,10 +4,10 @@
 ///
 
 `include "define.v"
-`include "scr1_arch_description.svh"
-`include "scr1_ahb.svh"
+`include "scr1_arch_description.h"
+`include "scr1_ahb.h"
 `ifdef SCR1_IPIC_EN
-`include "scr1_ipic.svh"
+`include "scr1_ipic.h"
 `endif // SCR1_IPIC_EN
 
 `define ALTERA_MEMORY

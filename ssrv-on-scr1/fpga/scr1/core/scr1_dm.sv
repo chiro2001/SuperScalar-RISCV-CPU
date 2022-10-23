@@ -3,11 +3,11 @@
 /// @brief      Debug Module (DM)
 ///
 
-`include "scr1_arch_description.svh"
+`include "scr1_arch_description.h"
 
 `ifdef SCR1_DBGC_EN
-`include "scr1_csr.svh"
-`include "scr1_dm.svh"
+`include "scr1_csr.h"
+`include "scr1_dm.h"
 
 module scr1_dm (
     // System

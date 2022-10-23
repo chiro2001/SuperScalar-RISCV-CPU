@@ -3,8 +3,8 @@
 /// @brief      Memory-mapped Timer
 ///
 
-`include "scr1_arch_description.svh"
-`include "scr1_memif.svh"
+`include "scr1_arch_description.h"
+`include "scr1_memif.h"
 
 module scr1_timer (
     // Common

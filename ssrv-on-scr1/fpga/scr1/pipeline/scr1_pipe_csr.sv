@@ -3,18 +3,18 @@
 /// @brief      Control Status Registers (CSR)
 ///
 
-`include "scr1_arch_description.svh"
-`include "scr1_csr.svh"
-`include "scr1_arch_types.svh"
-`include "scr1_riscv_isa_decoding.svh"
+`include "scr1_arch_description.h"
+`include "scr1_csr.h"
+`include "scr1_arch_types.h"
+`include "scr1_riscv_isa_decoding.h"
 `ifdef SCR1_IPIC_EN
-`include "scr1_ipic.svh"
+`include "scr1_ipic.h"
 `endif // SCR1_IPIC_EN
 `ifdef SCR1_DBGC_EN
-`include "scr1_hdu.svh"
+`include "scr1_hdu.h"
 `endif // SCR1_DBGC_EN
 `ifdef SCR1_BRKM_EN
-`include "scr1_tdu.svh"
+`include "scr1_tdu.h"
 `endif // SCR1_BRKM_EN
 
 module scr1_pipe_csr (
@@ -42,7 +42,7 @@ module scr1_pipe_csr (
 `ifdef SCR1_DBGC_EN
     input   logic                                       exu_no_commit,          // Forbid instruction commitment
 `endif // SCR1_DBGC_EN
-    input   type_scr1_exc_code_e                        exu2csr_exc_code,       // Exception code (see scr1_arch_types.svh)
+    input   type_scr1_exc_code_e                        exu2csr_exc_code,       // Exception code (see scr1_arch_types.h)
     input   logic [`SCR1_XLEN-1:0]                      exu2csr_trap_val,       // Trap value
     output  logic [`SCR1_XLEN-1:0]                      csr2exu_new_pc,         // Exception/IRQ/MRET new PC
     output  logic                                       csr2exu_irq,            // IRQ request

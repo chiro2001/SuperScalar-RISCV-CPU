@@ -3,21 +3,21 @@
 /// @brief      SCR1 pipeline top
 ///
 
-`include "scr1_arch_description.svh"
-`include "scr1_memif.svh"
-`include "scr1_riscv_isa_decoding.svh"
-`include "scr1_csr.svh"
+`include "scr1_arch_description.h"
+`include "scr1_memif.h"
+`include "scr1_riscv_isa_decoding.h"
+`include "scr1_csr.h"
 
 `ifdef SCR1_IPIC_EN
-`include "scr1_ipic.svh"
+`include "scr1_ipic.h"
 `endif // SCR1_IPIC_EN
 
 `ifdef SCR1_DBGC_EN
-`include "scr1_hdu.svh"
+`include "scr1_hdu.h"
 `endif // SCR1_DBGC_EN
 
 `ifdef SCR1_BRKM_EN
-`include "scr1_tdu.svh"
+`include "scr1_tdu.h"
 `endif // SCR1_BRKM_EN
 
 module scr1_pipe_top (
@@ -133,7 +133,7 @@ logic                                       idu2ifu_rdy;            // IDU ready
 
 // IDU <-> EXU
 logic                                       idu2exu_req;            // IDU request
-type_scr1_exu_cmd_s                         idu2exu_cmd;            // IDU command (see scr1_riscv_isa_decoding.svh)
+type_scr1_exu_cmd_s                         idu2exu_cmd;            // IDU command (see scr1_riscv_isa_decoding.h)
 logic                                       idu2exu_use_rs1;        // Instruction uses rs1
 logic                                       idu2exu_use_rs2;        // Instruction uses rs2
 logic                                       idu2exu_use_rd;         // Instruction uses rd
@@ -163,7 +163,7 @@ logic                                       exu2csr_take_irq;       // Take IRQ 
 logic                                       exu2csr_take_exc;       // Take exception trap
 logic                                       exu2csr_mret_update;    // MRET update CSR
 logic                                       exu2csr_mret_instr;     // MRET instruction
-type_scr1_exc_code_e                        exu2csr_exc_code;       // Exception code (see scr1_arch_types.svh)
+type_scr1_exc_code_e                        exu2csr_exc_code;       // Exception code (see scr1_arch_types.h)
 logic [`SCR1_XLEN-1:0]                      exu2csr_trap_val;       // Trap value
 logic [`SCR1_XLEN-1:0]                      csr2exu_new_pc;         // Exception/IRQ/MRET new PC
 logic                                       csr2exu_irq;            // IRQ request

@@ -3,7 +3,7 @@
 /// @brief System Control Unit (SCU)
 ///
 
-`include "scr1_arch_description.svh"
+`include "scr1_arch_description.h"
 
 `ifdef SCR1_DBGC_EN
 

@@ -3,18 +3,18 @@
 /// @brief      Execution Unit (EXU)
 ///
 
-`include "scr1_arch_description.svh"
-`include "scr1_arch_types.svh"
-`include "scr1_memif.svh"
-`include "scr1_riscv_isa_decoding.svh"
-`include "scr1_csr.svh"
+`include "scr1_arch_description.h"
+`include "scr1_arch_types.h"
+`include "scr1_memif.h"
+`include "scr1_riscv_isa_decoding.h"
+`include "scr1_csr.h"
 
 `ifdef SCR1_DBGC_EN
- `include "scr1_hdu.svh"
+ `include "scr1_hdu.h"
 `endif // SCR1_DBGC_EN
 
 `ifdef SCR1_BRKM_EN
- `include "scr1_tdu.svh"
+ `include "scr1_tdu.h"
 `endif // SCR1_BRKM_EN
 
 module scr1_pipe_exu (
@@ -60,7 +60,7 @@ module scr1_pipe_exu (
     output  logic                               exu2csr_take_exc,       // Take exception trap
     output  logic                               exu2csr_mret_update,    // MRET update CSR
     output  logic                               exu2csr_mret_instr,     // MRET instruction
-    output  type_scr1_exc_code_e                exu2csr_exc_code,       // Exception code (see scr1_arch_types.svh)
+    output  type_scr1_exc_code_e                exu2csr_exc_code,       // Exception code (see scr1_arch_types.h)
     output  logic [`SCR1_XLEN-1:0]              exu2csr_trap_val,       // Trap value
     input   logic [`SCR1_XLEN-1:0]              csr2exu_new_pc,         // Exception/IRQ/MRET new PC
     input   logic                               csr2exu_irq,            // IRQ request

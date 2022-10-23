@@ -3,7 +3,7 @@
 /// @brief      SCR1 clock gate primitive
 ///
 
-`include "scr1_arch_description.svh"
+`include "scr1_arch_description.h"
 
 `ifdef SCR1_CLKCTRL_EN
 module scr1_cg (

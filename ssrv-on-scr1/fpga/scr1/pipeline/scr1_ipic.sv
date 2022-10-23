@@ -3,11 +3,11 @@
 /// @brief      Integrated Programmable Interrupt Controller (IPIC)
 ///
 
-`include "scr1_arch_description.svh"
+`include "scr1_arch_description.h"
 
 `ifdef SCR1_IPIC_EN
 
-`include "scr1_ipic.svh"
+`include "scr1_ipic.h"
 
 module scr1_ipic
 (

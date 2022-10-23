@@ -3,12 +3,12 @@
 /// @brief      Load/Store Unit (LSU)
 ///
 
-`include "scr1_arch_description.svh"
-`include "scr1_arch_types.svh"
-`include "scr1_memif.svh"
-`include "scr1_riscv_isa_decoding.svh"
+`include "scr1_arch_description.h"
+`include "scr1_arch_types.h"
+`include "scr1_memif.h"
+`include "scr1_riscv_isa_decoding.h"
 `ifdef SCR1_BRKM_EN
-`include "scr1_tdu.svh"
+`include "scr1_tdu.h"
 `endif // SCR1_BRKM_EN
 
 module scr1_pipe_lsu (

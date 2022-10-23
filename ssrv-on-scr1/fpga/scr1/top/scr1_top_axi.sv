@@ -3,10 +3,10 @@
 /// @brief      SCR1 AXI top
 ///
 
-`include "scr1_arch_description.svh"
-`include "scr1_memif.svh"
+`include "scr1_arch_description.h"
+`include "scr1_memif.h"
 `ifdef SCR1_IPIC_EN
-`include "scr1_ipic.svh"
+`include "scr1_ipic.h"
 `endif // SCR1_IPIC_EN
 
 `ifdef SCR1_TCM_EN

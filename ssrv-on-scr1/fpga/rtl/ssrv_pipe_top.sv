@@ -1,19 +1,19 @@
 
-`include "scr1_arch_description.svh"
-`include "scr1_memif.svh"
-`include "scr1_riscv_isa_decoding.svh"
-`include "scr1_csr.svh"
+`include "scr1_arch_description.h"
+`include "scr1_memif.h"
+`include "scr1_riscv_isa_decoding.h"
+`include "scr1_csr.h"
 
 `ifdef SCR1_IPIC_EN
-`include "scr1_ipic.svh"
+`include "scr1_ipic.h"
 `endif // SCR1_IPIC_EN
 
 `ifdef SCR1_DBGC_EN
-`include "scr1_hdu.svh"
+`include "scr1_hdu.h"
 `endif // SCR1_DBGC_EN
 
 `ifdef SCR1_BRKM_EN
-`include "scr1_tdu.svh"
+`include "scr1_tdu.h"
 `endif // SCR1_BRKM_EN
 
 `include "define.v"

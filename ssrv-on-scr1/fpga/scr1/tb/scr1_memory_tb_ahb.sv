@@ -3,8 +3,8 @@
 /// @brief      AHB memory testbench
 ///
 
-`include "scr1_ahb.svh"
-`include "scr1_ipic.svh"
+`include "scr1_ahb.h"
+`include "scr1_ipic.h"
 
 module scr1_memory_tb_ahb #(
     parameter SCR1_MEM_POWER_SIZE  = 16

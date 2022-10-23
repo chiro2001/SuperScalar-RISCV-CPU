@@ -3,18 +3,18 @@
 /// @brief      SCR1 core top
 ///
 
-`include "scr1_arch_description.svh"
-`include "scr1_arch_types.svh"
-`include "scr1_memif.svh"
+`include "scr1_arch_description.h"
+`include "scr1_arch_types.h"
+`include "scr1_memif.h"
 
 `ifdef SCR1_DBGC_EN
-`include "scr1_tapc.svh"
-`include "scr1_dm.svh"
-`include "scr1_hdu.svh"
+`include "scr1_tapc.h"
+`include "scr1_dm.h"
+`include "scr1_hdu.h"
 `endif // SCR1_DBGC_EN
 
 `ifdef SCR1_IPIC_EN
-`include "scr1_ipic.svh"
+`include "scr1_ipic.h"
 `endif // SCR1_IPIC_EN
 
 module scr1_core_top #(

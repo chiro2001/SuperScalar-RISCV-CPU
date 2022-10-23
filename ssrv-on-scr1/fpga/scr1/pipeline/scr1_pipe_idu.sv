@@ -3,10 +3,10 @@
 /// @brief      Instruction Decoder Unit (IDU)
 ///
 
-`include "scr1_memif.svh"
-`include "scr1_arch_types.svh"
-`include "scr1_riscv_isa_decoding.svh"
-`include "scr1_arch_description.svh"
+`include "scr1_memif.h"
+`include "scr1_arch_types.h"
+`include "scr1_riscv_isa_decoding.h"
+`include "scr1_arch_description.h"
 
 module scr1_pipe_idu
 (

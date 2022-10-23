@@ -3,10 +3,10 @@
 /// @brief      Instruction Fetch Unit (IFU)
 ///
 
-`include "scr1_memif.svh"
-`include "scr1_arch_description.svh"
+`include "scr1_memif.h"
+`include "scr1_arch_description.h"
 `ifdef SCR1_DBGC_EN
-`include "scr1_hdu.svh"
+`include "scr1_hdu.h"
 `endif // SCR1_DBGC_EN
 
 module scr1_pipe_ifu

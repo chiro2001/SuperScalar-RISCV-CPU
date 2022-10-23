@@ -3,7 +3,7 @@
 /// @brief      AXI memory testbench
 ///
 
-`include "scr1_ipic.svh"
+`include "scr1_ipic.h"
 
 module scr1_memory_tb_axi #(
     parameter SIZE   = 1*1024*1024,

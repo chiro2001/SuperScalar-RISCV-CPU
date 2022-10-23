@@ -3,11 +3,11 @@
 /// @brief      Trigger Debug Unit (TDU)
 ///
 
-`include "scr1_arch_description.svh"
+`include "scr1_arch_description.h"
 
 `ifdef SCR1_BRKM_EN
-`include "scr1_riscv_isa_decoding.svh"
-`include "scr1_tdu.svh"
+`include "scr1_riscv_isa_decoding.h"
+`include "scr1_tdu.h"
 
 module scr1_pipe_tdu (
     // Common signals
